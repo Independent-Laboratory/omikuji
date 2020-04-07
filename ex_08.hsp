@@ -1,0 +1,29 @@
+    randomize
+    screen 0, 300, 300
+    title "‚¨‚İ‚­‚¶"
+
+    while
+    cls
+    pos 75, 130
+    mes "ƒNƒŠƒbƒN‚µ‚Ä‚­‚¾‚³‚¢"
+    onclick goto *clicked
+    stop
+
+*clicked
+    id = rnd(4)
+    cls
+    pos 130, 130
+    if id == 0 {
+        mes "‘å‹g"
+    }
+    if id == 1 {
+        mes "’†‹g"
+    }
+    if id == 2 {
+        mes "¬‹g"
+    }
+    if id == 3 {
+        mes "‹¥"
+    }
+    wait(100)
+    wend

@@ -1,0 +1,41 @@
+    randomize
+
+    mmload "bgm.wav", 0, 1
+	mmload "result.wav", 1, 0
+    
+    
+    title "‚¨‚Ý‚­‚¶"
+
+    while
+    
+    picload "omikuji.png", 0
+    pos 70, 210
+    mes "‰æ–Ê‚ðƒNƒŠƒbƒN!"
+    onclick goto *clicked
+    mmplay 0
+    stop
+
+*clicked
+	mmstop
+	mmplay 1
+	onclick 0
+	
+    id = rnd(4)
+	
+    if id == 0 {
+        picload "daikichi.png", 0
+    }
+    if id == 1 {
+        picload "tyuukichi.png", 0
+    }
+    if id == 2 {
+        picload "shoukichi.png", 0
+    }
+    if id == 3 {
+        picload "kyou.png", 0
+    }
+    
+    wait(500)
+    mmstop
+    onclick 1
+    wend

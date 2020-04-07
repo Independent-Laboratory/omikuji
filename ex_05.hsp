@@ -1,0 +1,9 @@
+    screen 0, 300, 300
+    title "‚¨‚Ý‚­‚¶"
+
+    pos 75, 130
+    mes "ƒNƒŠƒbƒN‚µ‚Ä‚­‚¾‚³‚¢"
+    onclick goto *clicked
+    stop
+
+*clicked
